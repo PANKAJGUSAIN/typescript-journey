@@ -1,3 +1,6 @@
+// Inference = TypeScript guesses it for you
+// Annotation = You tell TypeScript what it should be
+
 let age: number = 30 ; 
 let firstname:string = "hello";
 let isFictional: boolean 
