@@ -2,61 +2,65 @@
 
 ## TypeScript Basics
 
-- Types Basics in TypeScript
-    - `string`: Represents textual data.
-      ```typescript
-      let name: string = "John";
-      ```
+<details>
+<summary>Types Basics in TypeScript</summary>
 
-    - `number`: Represents numeric values.
-      ```typescript
-      let age: number = 25;
-      ```
+- **`string`**: Represents textual data.
+  ```typescript
+  let name: string = "John";
+  ```
 
-    - `boolean`: Represents true or false values.
-      ```typescript
-      let isActive: boolean = true;
-      ```
+- **`number`**: Represents numeric values.
+  ```typescript
+  let age: number = 25;
+  ```
 
-    - `null`: Represents the absence of a value.
-      ```typescript
-      let emptyValue: null = null;
-      ```
+- **`boolean`**: Represents true or false values.
+  ```typescript
+  let isActive: boolean = true;
+  ```
 
-    - `undefined`: Represents an uninitialized variable.
-      ```typescript
-      let notAssigned: undefined = undefined;
-      ```
+- **`null`**: Represents the absence of a value.
+  ```typescript
+  let emptyValue: null = null;
+  ```
 
-    - `any`: Allows any type of value (use with caution).
-      ```typescript
-      let randomValue: any = "Hello";
-      randomValue = 42;
-      ```
+- **`undefined`**: Represents an uninitialized variable.
+  ```typescript
+  let notAssigned: undefined = undefined;
+  ```
 
-    - `void`: Represents the absence of a return value in functions.
-      ```typescript
-      function logMessage(): void {
-        console.log("This function returns nothing.");
-      }
-      ```
+- **`any`**: Allows any type of value (use with caution).
+  ```typescript
+  let randomValue: any = "Hello";
+  randomValue = 42;
+  ```
 
-    - `never`: Represents values that never occur (e.g., a function that always throws an error).
-      ```typescript
-      function throwError(message: string): never {
-        throw new Error(message);
-      }
-      ```
+- **`void`**: Represents the absence of a return value in functions.
+  ```typescript
+  function logMessage(): void {
+    console.log("This function returns nothing.");
+  }
+  ```
 
-    - `object`: Represents non-primitive types (e.g., arrays, objects).
-      ```typescript
-      let person: object = { name: "Alice", age: 30 };
-      ```
+- **`never`**: Represents values that never occur (e.g., a function that always throws an error).
+  ```typescript
+  function throwError(message: string): never {
+    throw new Error(message);
+  }
+  ```
 
-    - `unknown`: Represents a value whose type is not known at the time of declaration.
-      ```typescript
-      let input: unknown = "Hello";
-      if (typeof input === "string") {
-        console.log(input.toUpperCase());
-      }
-      ```
+- **`object`**: Represents non-primitive types (e.g., arrays, objects).
+  ```typescript
+  let person: object = { name: "Alice", age: 30 };
+  ```
+
+- **`unknown`**: Represents a value whose type is not known at the time of declaration.
+  ```typescript
+  let input: unknown = "Hello";
+  if (typeof input === "string") {
+    console.log(input.toUpperCase());
+  }
+  ```
+
+</details>
