@@ -1,5 +1,44 @@
 # typescript-journey
 
+## How to Run TypeScript Code Without `tsconfig.json`
+
+  <details>
+  <summary>How to Run TypeScript Code Without `tsconfig.json`</summary>
+
+  If you don't have a `tsconfig.json` file set up, you can follow these steps to compile and run your TypeScript code:
+
+  1. Open PowerShell and navigate to your project directory:
+    ```powershell
+    PS D:\typescript-journey>
+    ```
+
+  2. Temporarily bypass the execution policy (if required):
+    ```powershell
+    PS D:\typescript-journey> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+    ```
+
+  3. Compile your TypeScript file (e.g., `index.ts`) to JavaScript:
+    ```powershell
+    PS D:\typescript-journey> tsc index.ts
+    ```
+
+  4. Run the generated JavaScript file using Node.js:
+    ```powershell
+    PS D:\typescript-journey> node index.js
+    ```
+
+  ### Setting Up `tsconfig.json`
+
+  To simplify the process and enable advanced TypeScript features, you can create a `tsconfig.json` file in your project directory. Run the following command to generate a default configuration file:
+
+  ```powershell
+  PS D:\typescript-journey> tsc --init
+  ```
+
+  This will create a `tsconfig.json` file with default settings. You can customize it as needed for your project.
+
+  </details>
+
 ## TypeScript Basics
 
 <details>
