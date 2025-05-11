@@ -38,6 +38,45 @@
   This will create a `tsconfig.json` file with default settings. You can customize it as needed for your project.
 
   </details>
+  <details>
+  <summary>Using `tsconfig.json` for Compilation</summary>
+
+  Once you have created a `tsconfig.json` file, you can configure it to streamline your TypeScript workflow:
+
+  1. Initialize the `tsconfig.json` file (if not already created):
+    ```powershell
+    PS D:\typescript-journey> tsc --init
+    ```
+
+  2. Open the `tsconfig.json` file and set the following options:
+    ```json
+    {
+      "compilerOptions": {
+       "rootDir": "./src",
+       "outDir": "./dist"
+      }
+    }
+    ```
+
+    - `rootDir`: Specifies the root directory of your TypeScript files.
+    - `outDir`: Specifies the output directory for the compiled JavaScript files.
+
+  3. Compile your TypeScript files by running:
+    ```powershell
+    PS D:\typescript-journey> tsc
+    ```
+
+  4. Alternatively, use the `--watch` flag to automatically recompile on file changes:
+    ```powershell
+    PS D:\typescript-journey> tsc --watch
+    ```
+
+  5. In a new terminal, run the compiled JavaScript file using Node.js:
+    ```powershell
+    PS D:\typescript-journey> node ./dist/index.js
+    ```
+
+  </details>
 
 ## TypeScript Basics
 
