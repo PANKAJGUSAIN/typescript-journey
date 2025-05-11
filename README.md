@@ -1,9 +1,9 @@
 # typescript-journey
 
-## How to Run TypeScript Code Without `tsconfig.json`
+## How to Run TypeScript Code 
 
   <details>
-  <summary>How to Run TypeScript Code Without `tsconfig.json`</summary>
+  <summary> Without `tsconfig.json`</summary>
 
   If you don't have a `tsconfig.json` file set up, you can follow these steps to compile and run your TypeScript code:
 
@@ -39,7 +39,7 @@
 
   </details>
   <details>
-  <summary>Using `tsconfig.json` for Compilation</summary>
+  <summary>With `tsconfig.json` </summary>
 
   Once you have created a `tsconfig.json` file, you can configure it to streamline your TypeScript workflow:
 
